@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<head>
+    <title>
+
+        Donat's Signup form
+    </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style type="text/css">
+    body{
+        margin: 0;
+        padding: 0;
+        background: grey;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #main{
+  background: rgba(19, 35, 47, 0.9);
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+    #main:hover{
+        box-shadow: 0 8px 8px 10px black; 
+    }
+    #signupcontainer,
+    #logincontainer{
+        padding: 35px;
+    }
+
+    .form-control{
+        width: 100%;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+    .inputbox{
+        height: 30%;
+        border: none;
+        padding: 13px;
+    }
+    .inputbox:focus{
+        outline-color: aqua;
+        font-size: 16px;
+        padding: 13px;
+    }
+    .batton{
+        width: 100%;
+        height: 40px;
+        border: none;
+        text-transform: uppercase;
+    }
+    .batton-primary{
+        background: #1ab188;
+        color: aliceblue;
+ }
+    #signup-tab,
+ #login-tab{
+     color: white;
+     padding: 15px;
+     width: 30%;
+     display: inline-block;
+     box-sizing: border-box;
+     text-align: center;
+     text-transform: uppercase;
+     cursor: pointer;
+     text-decoration: none;
+ }
+ #signup-tab a,
+ #login-tab a{
+ color: white;
+ text-decoration: none;
+ }
+ #signup-tab a:hover,
+ #login-tab a:hover{
+ color: green;
+ text-decoration: none;
+ }
+ .active{
+     background: #1ab188;
+ }
+
+ .top-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+
+}
+.top-row > div:last-child {
+  margin: 0;
+}
+.heading{
+    color: white;
+    text-align: center;
+}
+ .textcenter{
+     text-align: center;
+ }
+ .signuptxt,
+ .logintext{
+          font-size: 18px;
+     margin: 10px 10px;
+     color: white;
+ }
+ .forgotxt{
+     padding: 10px;
+ }
+ .link,
+ .link:active,
+ .link:visited{
+     margin-top: 12px;
+     text-decoration: none;
+     color: white;
+     padding:12px; 
+ }
+
+    </style>
+    
+</head>
+<body>
+  <div id="container">
+        <div id="main">
+                <div id="signupcontain">
+                    
+                    <ul class="tap-group">
+                       <li id="signup-tab" class="active"><a href="#signup">Sign Up</a></li>
+                       <li id="login-tab"><a href="#login">Log In</a></li>
+                    </ul>
+                    <h1 class="heading"> GETTING STARTED</h1>
+                    </div>
+                <div id="signupcontainer">
+                        <div class="top-row">
+                        <div class="form-group">
+                        
+                                <input type="text" class="form-control inputbox" id="signup-fname" placeholder="fname">
+                                </div>
+                                <div class="form-group">
+                                        <input type="text" class="form-control inputbox" id="signup-lname" placeholder="lname">
+                                        </div> 
+                        </div>   
+                                        <div class="form-group">
+                                                <input type="text" class="form-control inputbox" id="signup-email" placeholder="email">
+                                                </div>
+                                                <div class="form-group">
+                                                        <input type="password" class="form-control inputbox" id="signup-password" placeholder="password">
+                                                        </div> 
+                                                        <div class="form-group">
+                                                                <input type="password" class="form-control inputbox" id="signup-password" placeholder="confirm-password">
+                                                                </div>
+                                        <div class="form-group">
+                                                <input type="submit" class="batton batton-primary" value="get stared">
+                                                            </div>
+                                                        </div>
+                                                            
+                
+                                        <div id="logincontainer" hidden>
+                                                <div class="form-group">
+                                                        <input type="text" class="form-control inputbox" id="login-username" placeholder="Username">
+                                                        </div>
+                                                        <div class="form-group">
+                                                                <input type="password" class="form-control inputbox" id="login-password" placeholder="password">
+                                                                </div> 
+                                                                <div class="form-group">
+                                                                        <input type="submit" class="batton batton-primary" value="login">
+                                                                        </div>
+                                                                    <div class="textcenter loginptxt"> Do not have an account?<a href="#" class="link registerlink"> Signup</a></div> 
+                                                                        <p class="textcenter forgotxt"><a href="#" class="link forgotlink">forgot password?</a></p>
+                                                                    </div> 
+                                                                </div> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+
+                                                            var singupcontainer=document.querySelector('#signupcontainer');
+                                                            var logincontainer=document.querySelector('#logincontainer');
+                                                
+                                                            document.querySelector('#login-tab').addEventListener('click',function(){
+                                                                signupcontainer.style.display="none";
+                                                                logincontainer.style.display="block";
+                                                            });
+                                                            document.querySelector('#signup-tab').addEventListener('click',function(){
+                                                                signupcontainer.style.display="block";
+                                                                logincontainer.style.display="none";
+                                                            });
+                                                        </script>
+                                                    </body>
+                                                </html>
+
+                                                
+
+                        
+
+
+    
+
+
+
+
+
+
+
+
+
+
